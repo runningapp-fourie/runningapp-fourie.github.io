@@ -120,15 +120,39 @@
             width: 100px;
             height: 100px;
             border-radius: 20px;
-            margin-bottom: 20px;
         }
-    </style>
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .app-icon-inline {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+        }
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .app-icon-inline {
+                width: 100px;
+                height: 100px;
+            }
+        }
+</style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="appicon200.png" alt="Fourie App Icon" class="app-icon">
-            <h1>Fourie</h1>
+            
+            <div class="header-content">
+                <img src="appicon200.png" alt="Fourie App Icon" class="app-icon-inline">
+                <h1>Fourie</h1>
+            </div>
             <p class="subtitle">Elevate your running experience with Fourie—a powerful, intuitive app designed specifically for runners who demand precision and flexibility in tracking all your runs.</p>
             <a href=""><img src="download.svg" alt="Download on the App Store" width="240" height="120"></a>
         </div>
@@ -148,7 +172,7 @@
                         </div>
                         <div class="feature-card">
                             <h3>Lap Mode</h3>
-                            <p>Take full manual control. Simply start your run and tap to mark laps or sets whenever you're ready. No pre-setup required. Lower your wrist to activate lap mode and skip adding lap count, ensuring only true running effort counts toward your laps.</p>
+                            <p>Take full manual control. Simply start your run and tap to mark laps or sets whenever you're ready. No pre-setup required. Lower your wrist to activate Rest Mode and skip adding lap count when you start your lap, ensuring only true running effort counts toward your laps.</p>
                         </div>
                     </div>
                 </div>
