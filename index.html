@@ -40,6 +40,25 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        .section-image {
+            flex: 1 1 300px;
+            min-width: 300px;
+        }
+        .section-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .section-text {
+            flex: 1 1 400px;
+        }
         section {
             padding: 80px 0;
             background-color: #000000;
@@ -97,10 +116,15 @@
         .highlight {
             color: #ff9500; /* Apple Watch orange accent for subtle highlights */
         }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-
     <header>
         <div class="container">
             <img src="appicon200.png" alt="Fourie App Icon" class="app-icon">
@@ -108,23 +132,28 @@
             <p class="subtitle">Elevate your running experience with Fourie—a powerful, intuitive app designed specifically for runners who demand precision and flexibility in tracking all your runs.</p>
         </div>
     </header>
-
     <section>
         <div class="container">
-            <h2>Two Intuitive Modes for Every Run</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Split Mode</h3>
-                    <p>Automatically split your run by distance or time. Set up 1 km, 1 mile, or custom intervals, and Fourie handles the timing and announcements effortlessly—perfect for structured interval training, tempo runs, or race pacing.</p>
+            <div class="section-content">
+                <div class="section-image">
+                    <img src="watch0.png" alt="Screenshot 0">
                 </div>
-                <div class="feature-card">
-                    <h3>Lap Mode</h3>
-                    <p>Take full manual control. Simply start your run and tap to mark laps or sets whenever you're ready. No pre-setup required. Lower your wrist to activate lap mode and skip adding lap count, ensuring only true running effort counts toward your laps.</p>
+                <div class="section-text">
+                    <h2>Two Intuitive Modes for Every Run</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3>Split Mode</h3>
+                            <p>Automatically split your run by distance or time. Set up 1 km, 1 mile, or custom intervals, and Fourie handles the timing and announcements effortlessly—perfect for structured interval training, tempo runs, or race pacing.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Lap Mode</h3>
+                            <p>Take full manual control. Simply start your run and tap to mark laps or sets whenever you're ready. No pre-setup required. Lower your wrist to activate lap mode and skip adding lap count, ensuring only true running effort counts toward your laps.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="alt">
         <div class="container">
             <h2>Personalized Features to Keep You Motivated</h2>
@@ -140,7 +169,6 @@
             </div>
         </div>
     </section>
-
     <section>
         <div class="container">
             <h2>Seamless Control on Your Wrist</h2>
@@ -160,7 +188,6 @@
             </div>
         </div>
     </section>
-
     <section class="alt">
         <div class="container">
             <h2>Detailed Insights Right on Your Wrist</h2>
@@ -180,7 +207,6 @@
             </div>
         </div>
     </section>
-
     <section class="cta">
         <div class="container">
             <h2>Built by runners, for runners.</h2>
@@ -190,11 +216,9 @@
             <a href="#" class="cta-button">Download on the App Store</a>
         </div>
     </section>
-
     <footer>
         <p>Fourie is a watch-only running app built by a group of running enthusiasts.<br>
         © 2025 Fourie. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
